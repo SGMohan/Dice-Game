@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply mx-auto flex flex-col items-center justify-center gap-8 h-screen;
+}
+
+.heading {
+  @apply text-6xl font-bold text-green-700 text-center underline;
+}
+
+.description {
+  @apply text-lg text-center font-bold;
+}
+
+.play {
+  @apply flex gap-8 justify-evenly w-full;
+}
+
+.players {
+  @apply flex flex-col gap-10 items-center;
+}
+
+.playerOneHeading {
+  @apply text-3xl  font-bold text-center;
+}
+
+.playerTwoHeading {
+  @apply text-3xl  font-bold text-center;
+}
+
+.playerOneScore {
+  @apply text-5xl text-slate-700 font-bold text-center;
+}
+
+.playerTwoScore {
+  @apply text-5xl text-slate-700 font-bold text-center;
+}
+
+.playerOneButton {
+  @apply text-white bg-blue-500 hover:bg-blue-700 font-bold px-4 py-2 rounded disabled:bg-slate-400;
+}
+
+.playerTwoButton {
+  @apply text-white bg-red-500 hover:bg-red-700 font-bold px-4 py-2 rounded disabled:bg-slate-400;
+}
+
+.diceImage {
+  @apply w-48 h-48;
+}
+
+.allow {
+  @apply text-2xl font-bold text-center;
+}
+
+.resetButton {
+  @apply text-white bg-gray-500 hover:bg-gray-600 font-bold px-4 py-2 rounded mt-8;
+}
+
+.allowed {
+  @apply hidden;
+}
