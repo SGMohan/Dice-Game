@@ -73,6 +73,7 @@ window.onload = function () {
   function rollDice() {
     const diceValue = Math.floor(Math.random() * 6) + 1;
     diceImage.src = `./public/${diceValue}.png`;
+    diceImage.scrollIntoView({ behavior: "smooth", block: "center" });
     return diceValue;
   }
   function checkWinner(score, player) {
